@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($input_password, $row['password'])) {
             $_SESSION['owner_logged_in'] = true;
             $_SESSION['owner_username'] = $row['username'];
-            $_SESSION['owner_flat_number'] = $row['flat_number']; // ⬅️ store flat_number for future use
+            $_SESSION['owner_flat_number'] = $row['flat_number']; 
 
             header("Location: owner_dashboard.php");
             exit();

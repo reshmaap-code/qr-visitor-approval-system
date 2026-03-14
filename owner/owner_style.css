@@ -1,4 +1,3 @@
-/* Owner Login Page – Professional Blue Theme */
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,7 +10,7 @@ body {
     margin: 0;
 }
 
-/* Login Box */
+
 .login-box {
     background: #ffffff;
     padding: 40px 35px;
@@ -22,7 +21,7 @@ body {
     text-align: center;
 }
 
-/* Header */
+
 .login-box h2 {
     color: #003366;
     margin-bottom: 25px;
@@ -33,7 +32,7 @@ body {
     padding-bottom: 10px;
 }
 
-/* Labels */
+
 label {
     color: #333;
     font-weight: 600;
@@ -42,7 +41,7 @@ label {
     text-align: left;
 }
 
-/* Input Fields */
+
 input[type="text"],
 input[type="password"] {
     width: 100%;
@@ -62,7 +61,7 @@ input:focus {
     box-shadow: 0 0 8px rgba(76, 179, 255, 0.4);
 }
 
-/* Show Password */
+
 .show-password-left {
     text-align: left;
     color: #0066cc;
@@ -72,14 +71,14 @@ input:focus {
     font-weight: 500;
 }
 
-/* Error Message */
+
 .error {
     color: red;
     margin-bottom: 15px;
     text-align: center;
 }
 
-/* Button */
+
 button {
     width: 100%;
     background: linear-gradient(to right, #003366, #007bff);
@@ -99,7 +98,7 @@ button:hover {
     box-shadow: 0 5px 15px rgba(0, 51, 102, 0.4);
 }
 
-/* Forgot Password Link */
+
 .forgot {
     margin-top: 20px;
 }

@@ -9,7 +9,7 @@ if (!isset($_SESSION['owner_logged_in'])) {
 
 $owner_username = $_SESSION['owner_username'];
 
-// ✅ Case 1: Update Auto-Reject / Vacation Mode Settings
+// Case 1: Update Auto-Reject / Vacation Mode 
 if (isset($_POST['auto_reject_mode']) || isset($_POST['vacation_start'])) {
     $auto_reject = isset($_POST['auto_reject_mode']) ? 1 : 0;
     $vac_start = !empty($_POST['vacation_start']) ? $_POST['vacation_start'] : NULL;
@@ -25,7 +25,7 @@ if (isset($_POST['auto_reject_mode']) || isset($_POST['vacation_start'])) {
     exit();
 }
 
-// ✅ Case 2: Approve / Reject Visitor Request
+//Case 2: Approve / Reject Visitor Request
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id']) && isset($_POST['action'])) {
     $id = $_POST['id'];
     $action = $_POST['action'];
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id']) && isset($_POST[
     $result3 = $stmt3->get_result();
     $owner = $result3->fetch_assoc();
 
-    // ✅ Send Email Notification
+    // Send Email Notification
     if ($owner && !empty($owner['email'])) {
         $to = $owner['email'];  
         $subject = "Visitor Request " . $action;

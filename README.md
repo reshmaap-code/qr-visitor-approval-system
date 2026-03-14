@@ -30,5 +30,4 @@ A mini project developed using HTML, CSS, JavaScript, PHP, and MySQL.
 4. Import the database file into phpMyAdmin
 5. Open the project in browser
 
-## Note
-Sensitive credentials such as email passwords and database passwords are not included in this repository.
+

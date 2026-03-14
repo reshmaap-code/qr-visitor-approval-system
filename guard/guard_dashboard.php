@@ -185,7 +185,6 @@ function loadVisitors() {
         .catch(err => console.error(err));
 }
 
-// Load every 5 seconds
 setInterval(loadVisitors, 5000);
 loadVisitors(); // initial load
 </script>

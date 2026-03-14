@@ -8,7 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
 
-    // Check against guard_users table
     $stmt = $conn->prepare("SELECT * FROM guard_users WHERE username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();

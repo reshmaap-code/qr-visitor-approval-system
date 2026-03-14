@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Entry Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Visitor Entry Form</h2>
+    <form action="submit.php" method="POST">
+      <label for="visitor_name">Full Name:</label>
+      <input type="text" id="visitor_name" name="visitor_name" required>
+
+      <label for="phone_number">Phone Number:</label>
+      <input type="tel" id="phone_number" name="phone_number" required>
+
+      <label for="flat_number">Flat Number (Visiting):</label>
+      <input type="text" id="flat_number" name="flat_number" required>
+
+      <label for="visitor_email">Email:</label>
+      <input type="email" id="visitor_email" name="visitor_email">
+
+      <label for="purpose">Purpose of Visit:</label>
+      <input type="text" id="purpose" name="purpose" required>
+
+      <label for="visitor_datetime">Time of Visit:</label>
+      <input type="datetime-local" id="visitor_datetime" name="visitor_datetime" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

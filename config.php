@@ -10,7 +10,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Gmail credentials (use App Password, not real password)
-define("GMAIL_USER", "yourprojectemail1@gmail.com");
-define("GMAIL_PASS", "busb titq hxlq mgoq");
+// Gmail credentials
+define("GMAIL_USER", "your_email@gmail.com");
+define("GMAIL_PASS", "your_app_password");
 ?>
